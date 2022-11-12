@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btn_update_list"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="14dp"
+        android:contentDescription="@string/app_name"
+
+        android:onClick="UpdateList"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/gridviewlist"
+        app:layout_constraintEnd_toStartOf="@+id/sort"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/stat_sys_download" />
+
+    <ImageButton
+        android:id="@+id/btn_add_staff"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginEnd="14dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="onclick_view_add_staff"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/gridviewlist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sort"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <ListView
+        android:id="@+id/gridviewlist"
+        android:layout_width="380dp"
+        android:layout_height="630dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/sort"
+        android:layout_width="282dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridviewlist"
+        app:layout_constraintEnd_toStartOf="@+id/btn_add_staff"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_update_list" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
