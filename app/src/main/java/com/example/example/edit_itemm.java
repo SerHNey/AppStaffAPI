@@ -60,7 +60,7 @@ public class edit_itemm extends AppCompatActivity {
                 //    Toast.makeText(add_new_staff.this, "Заполните все поля", Toast.LENGTH_SHORT).show();
                 //    return;
                 //}
-                //add_staff(title.toString(),cost.toString(),stockAvailability.toString(),availabilityInTheStore.toString(),description.toString(),rewiews.toString(), encodedImage);
+                add_staff(title.toString(),cost.toString() ,stockAvailability.toString(),availabilityInTheStore.toString(),description.toString(),rewiews.toString(), encodedImage);
             }
         });
         //открытие
@@ -114,12 +114,12 @@ public class edit_itemm extends AppCompatActivity {
         }
         return "";
     }
-    public void add_staff(String title, int cost, int stockAvailability, int availabilityInTheStore, String description, String rewiews, String image){
+    public void add_staff(String title, String cost, String stockAvailability, String availabilityInTheStore, String description, String rewiews, String image){
 
-        Retrofit retrofit = new Retrofit.Builder().baseUrl ("https://ngknn.ru:5001/NGKNN/НаумовСА/api/")
+        Retrofit retrofit = new Retrofit.Builder().baseUrl ("https://ngknn.ru:5001/NGKNN/зеленцовдр/Api/")
                 .addConverterFactory(GsonConverterFactory.create()).build();
         RetrofitApi retrofitAPI = retrofit.create(RetrofitApi.class);
-        Game modal = new Game (title,cost,stockAvailability,availabilityInTheStore,description,rewiews,encodedImage);
+        Game modal = new Game (3,title,1,1,1,description,rewiews,encodedImage);
         Call<Game> call = retrofitAPI.postData(modal);
         call.enqueue(new Callback<Game>() {
             @Override
