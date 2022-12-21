@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageGame"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/title_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Заголовок"
+        android:layout_toEndOf="@id/imageGame"/>
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageGame"
+        android:layout_below="@id/title_title"/>
+
+    <TextView
+        android:id="@+id/title_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Цена"
+        android:layout_toEndOf="@id/imageGame"
+        android:layout_below="@id/txt_title"/>
+
+    <TextView
+        android:id="@+id/txt_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageGame"
+        android:layout_below="@id/title_cost"/>
+
+    <TextView
+        android:id="@+id/title_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock"
+        android:layout_toEndOf="@id/imageGame"
+        android:layout_below="@id/txt_cost"/>
+
+    <TextView
+        android:id="@+id/txt_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageGame"
+        android:layout_below="@id/title_stock"/>
+
+    <TextView
+        android:id="@+id/title_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store"
+        android:layout_toEndOf="@id/imageGame"
+        android:layout_below="@id/txt_stock"/>
+
+    <TextView
+        android:id="@+id/txt_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageGame"
+        android:layout_below="@id/title_store"/>
+
+    <TextView
+        android:id="@+id/title_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_toEndOf="@id/imageGame"
+        android:layout_below="@id/txt_store"/>
+
+    <TextView
+        android:id="@+id/txt_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageGame"
+        android:layout_below="@id/title_description"/>
+
+    <TextView
+        android:id="@+id/title_rewiews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rewiews"
+        android:layout_toEndOf="@id/imageGame"
+        android:layout_below="@id/txt_description"/>
+
+    <TextView
+        android:id="@+id/txt_rewiews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageGame"
+        android:layout_below="@id/title_rewiews"/>
+</RelativeLayout>
